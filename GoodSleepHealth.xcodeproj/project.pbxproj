@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7B375C9422645B87001953B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375C9322645B87001953B6 /* AppDelegate.swift */; };
-		7B375C9622645B87001953B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375C9522645B87001953B6 /* ViewController.swift */; };
+		7B375C9622645B87001953B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375C9522645B87001953B6 /* LoginViewController.swift */; };
 		7B375C9922645B87001953B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B375C9722645B87001953B6 /* Main.storyboard */; };
 		7B375C9C22645B87001953B6 /* GoodSleepHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B375C9A22645B87001953B6 /* GoodSleepHealth.xcdatamodeld */; };
 		7B375C9E22645B88001953B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B375C9D22645B88001953B6 /* Assets.xcassets */; };
 		7B375CA122645B88001953B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B375C9F22645B88001953B6 /* LaunchScreen.storyboard */; };
 		7B375CAC22645B88001953B6 /* GoodSleepHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375CAB22645B88001953B6 /* GoodSleepHealthTests.swift */; };
 		7B375CB722645B88001953B6 /* GoodSleepHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375CB622645B88001953B6 /* GoodSleepHealthUITests.swift */; };
+		7B375D09226494B2001953B6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D08226494B2001953B6 /* LoginViewModel.swift */; };
+		7B375D0F22649D88001953B6 /* usersWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D0E22649D88001953B6 /* usersWebService.swift */; };
+		7B375D1122649ECB001953B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D1022649ECB001953B6 /* HomeViewController.swift */; };
+		7B375D132264A410001953B6 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D122264A410001953B6 /* CommonUtil.swift */; };
 		8302B84333803D81E356F311 /* Pods_GoodSleepHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B70FCA8DDE18E691F38F7C /* Pods_GoodSleepHealth.framework */; };
 		A26F8C778D7F43B177F5F7FC /* Pods_GoodSleepHealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAD1782786FCBE9C1C43B51 /* Pods_GoodSleepHealthUITests.framework */; };
 		B7AC5F1459F954569893123C /* Pods_GoodSleepHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415F4B234A48B43BFD65F282 /* Pods_GoodSleepHealthTests.framework */; };
@@ -44,7 +48,7 @@
 		41B70FCA8DDE18E691F38F7C /* Pods_GoodSleepHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B375C9022645B86001953B6 /* GoodSleepHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodSleepHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B375C9322645B87001953B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B375C9522645B87001953B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B375C9522645B87001953B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7B375C9822645B87001953B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B375C9B22645B87001953B6 /* GoodSleepHealth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodSleepHealth.xcdatamodel; sourceTree = "<group>"; };
 		7B375C9D22645B88001953B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +60,10 @@
 		7B375CB222645B88001953B6 /* GoodSleepHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodSleepHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B375CB622645B88001953B6 /* GoodSleepHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodSleepHealthUITests.swift; sourceTree = "<group>"; };
 		7B375CB822645B88001953B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B375D08226494B2001953B6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7B375D0E22649D88001953B6 /* usersWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersWebService.swift; sourceTree = "<group>"; };
+		7B375D1022649ECB001953B6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7B375D122264A410001953B6 /* CommonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
 		984081E6FA440ED72BE0000C /* Pods-GoodSleepHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodSleepHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodSleepHealth/Pods-GoodSleepHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		9D077EE00B7B6393BFACC84E /* Pods-GoodSleepHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodSleepHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodSleepHealth/Pods-GoodSleepHealth.release.xcconfig"; sourceTree = "<group>"; };
 		9EF9D6500E70A8AE1F5F5F26 /* Pods-GoodSleepHealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodSleepHealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodSleepHealthTests/Pods-GoodSleepHealthTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,11 +147,12 @@
 		7B375C9222645B86001953B6 /* GoodSleepHealth */ = {
 			isa = PBXGroup;
 			children = (
-				7B375CC822645FD3001953B6 /* Model */,
-				7B375CC522645F05001953B6 /* View */,
-				7B375CC422645EF2001953B6 /* Controller */,
+				7B375D0A226495C4001953B6 /* WebServices */,
+				7B375D0722648E25001953B6 /* CommonUtil */,
+				7B375CC822645FD3001953B6 /* Models */,
+				7B375CC422645EF2001953B6 /* Controllers */,
 				7B375C9322645B87001953B6 /* AppDelegate.swift */,
-				7B375C9522645B87001953B6 /* ViewController.swift */,
+				7B375C9522645B87001953B6 /* LoginViewController.swift */,
 				7B375C9722645B87001953B6 /* Main.storyboard */,
 				7B375C9D22645B88001953B6 /* Assets.xcassets */,
 				7B375C9F22645B88001953B6 /* LaunchScreen.storyboard */,
@@ -171,25 +180,36 @@
 			path = GoodSleepHealthUITests;
 			sourceTree = "<group>";
 		};
-		7B375CC422645EF2001953B6 /* Controller */ = {
+		7B375CC422645EF2001953B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7B375D1022649ECB001953B6 /* HomeViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		7B375CC522645F05001953B6 /* View */ = {
+		7B375CC822645FD3001953B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7B375D08226494B2001953B6 /* LoginViewModel.swift */,
 			);
-			path = View;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		7B375CC822645FD3001953B6 /* Model */ = {
+		7B375D0722648E25001953B6 /* CommonUtil */ = {
 			isa = PBXGroup;
 			children = (
+				7B375D122264A410001953B6 /* CommonUtil.swift */,
 			);
-			path = Model;
+			path = CommonUtil;
+			sourceTree = "<group>";
+		};
+		7B375D0A226495C4001953B6 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				7B375D0E22649D88001953B6 /* usersWebService.swift */,
+			);
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,12 +375,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GoodSleepHealthTests/Pods-GoodSleepHealthTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -418,9 +440,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B375C9622645B87001953B6 /* ViewController.swift in Sources */,
+				7B375D09226494B2001953B6 /* LoginViewModel.swift in Sources */,
+				7B375C9622645B87001953B6 /* LoginViewController.swift in Sources */,
 				7B375C9422645B87001953B6 /* AppDelegate.swift in Sources */,
+				7B375D0F22649D88001953B6 /* usersWebService.swift in Sources */,
 				7B375C9C22645B87001953B6 /* GoodSleepHealth.xcdatamodeld in Sources */,
+				7B375D1122649ECB001953B6 /* HomeViewController.swift in Sources */,
+				7B375D132264A410001953B6 /* CommonUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +504,7 @@
 		7B375CB922645B88001953B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -539,6 +566,7 @@
 		7B375CBA22645B88001953B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -595,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 984081E6FA440ED72BE0000C /* Pods-GoodSleepHealth.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FDUPYF9E2;
@@ -615,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D077EE00B7B6393BFACC84E /* Pods-GoodSleepHealth.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FDUPYF9E2;
