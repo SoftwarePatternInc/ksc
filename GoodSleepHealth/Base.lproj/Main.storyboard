@@ -247,11 +247,175 @@
                                             <constraint firstAttribute="trailing" secondItem="X5t-hE-rin" secondAttribute="trailing" id="zNR-y3-GtB"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3So-oS-8Hr">
+                                        <rect key="frame" x="0.0" y="42" width="375" height="516"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="82G-if-jti">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="QEk-3d-PV0"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dp5-Nd-BtD">
+                                                    <size key="itemSize" width="373" height="80"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="weeksCell" id="v76-0Q-kuW" customClass="WeekCollectionViewCell" customModule="GoodSleepHealth" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="80"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiL-Bt-JbW">
+                                                                    <rect key="frame" x="8" y="28" width="357" height="44"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstItem="FiL-Bt-JbW" firstAttribute="top" secondItem="v76-0Q-kuW" secondAttribute="topMargin" id="2EU-o8-ZI5"/>
+                                                            <constraint firstAttribute="bottomMargin" secondItem="FiL-Bt-JbW" secondAttribute="bottom" id="EIw-sA-I8m"/>
+                                                            <constraint firstItem="FiL-Bt-JbW" firstAttribute="leading" secondItem="v76-0Q-kuW" secondAttribute="leadingMargin" id="ERx-lh-ifC"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="FiL-Bt-JbW" secondAttribute="trailing" id="m8z-T5-KAf"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="weekNumber" destination="FiL-Bt-JbW" id="dyz-LV-67v"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="M8V-3v-c8a" id="A8y-Yv-n2K"/>
+                                                    <outlet property="delegate" destination="M8V-3v-c8a" id="HkA-92-vcQ"/>
+                                                </connections>
+                                            </collectionView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Trv-Lh-hsg">
+                                                <rect key="frame" x="0.0" y="80" width="375" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="fMg-oE-0lg"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8dU-1N-Vw9">
+                                                    <size key="itemSize" width="373" height="75"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DaysCell" id="Uap-qy-c9P" customClass="DaysCollectionViewCell" customModule="GoodSleepHealth" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="2.5" width="373" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="75"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-Zg-FeM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="75"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="WTk-Zg-FeM" secondAttribute="trailing" id="P8o-bs-LXl"/>
+                                                            <constraint firstItem="WTk-Zg-FeM" firstAttribute="leading" secondItem="Uap-qy-c9P" secondAttribute="leading" id="fOe-O3-EWy"/>
+                                                            <constraint firstItem="WTk-Zg-FeM" firstAttribute="top" secondItem="Uap-qy-c9P" secondAttribute="top" id="iiq-1l-FBr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="WTk-Zg-FeM" secondAttribute="bottom" id="wta-fI-b43"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="dayNumber" destination="WTk-Zg-FeM" id="AiG-4p-P4X"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="M8V-3v-c8a" id="cCv-vI-StM"/>
+                                                    <outlet property="delegate" destination="M8V-3v-c8a" id="UDV-XW-Bz0"/>
+                                                </connections>
+                                            </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSX-Km-i2n">
+                                                <rect key="frame" x="0.0" y="160" width="375" height="356"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-nx-wOb">
+                                                        <rect key="frame" x="100" y="10" width="175" height="42"/>
+                                                        <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="42" id="bHb-Q7-XO2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <state key="normal" title="Go To Morning Question">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 1,  TUESDAY,  APR - 16 - 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiC-EH-ipi">
+                                                        <rect key="frame" x="0.0" y="62" width="375" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="22" id="Oyi-2p-KsP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIGHT QUESTIONNAIRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls3-78-T88">
+                                                        <rect key="frame" x="0.0" y="94" width="375" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="22" id="rgQ-Nf-qaN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-eO-A2i">
+                                                        <rect key="frame" x="0.0" y="116" width="375" height="240"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.6705882353" green="0.78823529410000004" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="FiC-EH-ipi" firstAttribute="leading" secondItem="kSX-Km-i2n" secondAttribute="leading" id="RYk-yV-Upb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FiC-EH-ipi" secondAttribute="trailing" id="SWA-Bs-z3K"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5r2-eO-A2i" secondAttribute="bottom" id="SXY-C2-NwO"/>
+                                                    <constraint firstItem="QlJ-nx-wOb" firstAttribute="top" secondItem="kSX-Km-i2n" secondAttribute="top" constant="10" id="ZdF-Rd-zNe"/>
+                                                    <constraint firstItem="5r2-eO-A2i" firstAttribute="leading" secondItem="kSX-Km-i2n" secondAttribute="leading" id="cPM-r3-qvX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QlJ-nx-wOb" secondAttribute="trailing" priority="750" constant="100" id="eW8-8o-Ma4"/>
+                                                    <constraint firstItem="ls3-78-T88" firstAttribute="leading" secondItem="kSX-Km-i2n" secondAttribute="leading" id="ktq-Pd-mpU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ls3-78-T88" secondAttribute="trailing" id="onc-oi-9PJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5r2-eO-A2i" secondAttribute="trailing" id="qjR-pL-64F"/>
+                                                    <constraint firstItem="5r2-eO-A2i" firstAttribute="top" secondItem="ls3-78-T88" secondAttribute="bottom" id="vvU-0C-2we"/>
+                                                    <constraint firstItem="QlJ-nx-wOb" firstAttribute="leading" secondItem="kSX-Km-i2n" secondAttribute="leading" priority="750" constant="100" id="w6I-eT-DeC"/>
+                                                    <constraint firstItem="ls3-78-T88" firstAttribute="top" secondItem="FiC-EH-ipi" secondAttribute="bottom" constant="10" id="wqJ-1y-djx"/>
+                                                    <constraint firstItem="FiC-EH-ipi" firstAttribute="top" secondItem="QlJ-nx-wOb" secondAttribute="bottom" constant="10" id="y9M-5P-U2W"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kSX-Km-i2n" secondAttribute="trailing" id="8Is-vr-0RL"/>
+                                            <constraint firstItem="82G-if-jti" firstAttribute="leading" secondItem="3So-oS-8Hr" secondAttribute="leading" id="9R5-ns-y6m"/>
+                                            <constraint firstItem="Trv-Lh-hsg" firstAttribute="top" secondItem="82G-if-jti" secondAttribute="bottom" id="Cdo-vh-Pcn"/>
+                                            <constraint firstItem="82G-if-jti" firstAttribute="top" secondItem="3So-oS-8Hr" secondAttribute="top" id="GJ3-D7-Laj"/>
+                                            <constraint firstItem="kSX-Km-i2n" firstAttribute="top" secondItem="Trv-Lh-hsg" secondAttribute="bottom" id="HLa-ay-I2v"/>
+                                            <constraint firstAttribute="trailing" secondItem="Trv-Lh-hsg" secondAttribute="trailing" id="PRf-6Y-EEY"/>
+                                            <constraint firstItem="Trv-Lh-hsg" firstAttribute="leading" secondItem="3So-oS-8Hr" secondAttribute="leading" id="Y0f-fj-FWN"/>
+                                            <constraint firstAttribute="trailing" secondItem="82G-if-jti" secondAttribute="trailing" id="kbY-j2-7RO"/>
+                                            <constraint firstAttribute="bottom" secondItem="kSX-Km-i2n" secondAttribute="bottom" id="nYk-WF-Crt"/>
+                                            <constraint firstItem="kSX-Km-i2n" firstAttribute="leading" secondItem="3So-oS-8Hr" secondAttribute="leading" id="owN-ES-Jzr"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3So-oS-8Hr" secondAttribute="trailing" id="24T-OO-lkq"/>
+                                    <constraint firstItem="3So-oS-8Hr" firstAttribute="top" secondItem="pqq-Do-y8K" secondAttribute="bottom" id="PCy-h1-xDc"/>
                                     <constraint firstItem="pqq-Do-y8K" firstAttribute="top" secondItem="RQp-mY-xX6" secondAttribute="top" id="Swj-4j-xQb"/>
+                                    <constraint firstAttribute="bottom" secondItem="3So-oS-8Hr" secondAttribute="bottom" constant="45" id="fhw-nL-29g"/>
                                     <constraint firstItem="pqq-Do-y8K" firstAttribute="leading" secondItem="RQp-mY-xX6" secondAttribute="leading" id="gaJ-h8-edZ"/>
+                                    <constraint firstItem="3So-oS-8Hr" firstAttribute="leading" secondItem="RQp-mY-xX6" secondAttribute="leading" id="ijS-aG-vF9"/>
                                     <constraint firstAttribute="trailing" secondItem="pqq-Do-y8K" secondAttribute="trailing" id="wDf-NG-qen"/>
                                 </constraints>
                             </view>
@@ -317,6 +481,8 @@
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="48n-Yy-f96"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="daysCollectionView" destination="Trv-Lh-hsg" id="Eq5-dy-9w3"/>
+                        <outlet property="weeksCollectionView" destination="82G-if-jti" id="Uct-xw-uxs"/>
                         <segue destination="6Cp-95-1Ka" kind="show" identifier="SETTINGALARM" id="kk2-cT-kpQ"/>
                     </connections>
                 </viewController>

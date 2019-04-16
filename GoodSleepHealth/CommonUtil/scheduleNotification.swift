@@ -9,14 +9,15 @@
 import Foundation
 import UserNotifications
 class scheduleNotification {
-    func scheduleNotification(notificationType: String,timeInterval:TimeInterval) {
+    func scheduleNotification(notificationType: String,timeInterval:Date) {
         let content = UNMutableNotificationContent() //
         content.title = notificationType
         content.body = "This is example how to create " + notificationType + " Notifications"
         content.sound = UNNotificationSound.default
-        content.badge = 1
+        content.badge = 0
         let identifier = "Local Notification"
-        let date = Date(timeIntervalSinceNow: timeInterval)
+        //let
+        let date = timeInterval //Date(timeIntervalSinceNow: 1)
         let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)

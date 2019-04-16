@@ -17,6 +17,7 @@ class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        morningAlarmPicker.timeZone = TimeZone(secondsFromGMT: 5*60*60)
         
         
     }
@@ -48,18 +49,18 @@ class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
     }
     func getTime(sender:UIDatePicker,morning:Bool)
     {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "hh:mm:ss a"
-        let ouptputTime = dateFormatter.string(from: sender.date)
-        let outputTimeInterval = parseDuration(ouptputTime)
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "hh:mm:ss a"
+        let outputTimeInterval = sender.date
+        
         if morning{
             CommonUtil.morningAlarm = outputTimeInterval
         }
         else{
             CommonUtil.eveningAlaram = outputTimeInterval
         }
-        print("ouptputTime:-\(ouptputTime)")
-        print(parseDuration(ouptputTime))
+        print("ouptputTime: \(outputTimeInterval)")
+        //print(parseDuration(ouptputTime))
     }
     func parseDuration(_ timeString:String) -> TimeInterval {
         guard !timeString.isEmpty else {

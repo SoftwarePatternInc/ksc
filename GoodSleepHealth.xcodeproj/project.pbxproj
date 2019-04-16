@@ -24,6 +24,7 @@
 		7BC48C1622659866000D9DA6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C1522659866000D9DA6 /* WebViewController.swift */; };
 		7BC48C182265A980000D9DA6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C172265A980000D9DA6 /* NavigationViewController.swift */; };
 		7BC48C1B2265BB66000D9DA6 /* scheduleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C1A2265BB66000D9DA6 /* scheduleNotification.swift */; };
+		7BC48C1D2265F523000D9DA6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C1C2265F523000D9DA6 /* CollectionViewCell.swift */; };
 		8302B84333803D81E356F311 /* Pods_GoodSleepHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B70FCA8DDE18E691F38F7C /* Pods_GoodSleepHealth.framework */; };
 		A26F8C778D7F43B177F5F7FC /* Pods_GoodSleepHealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAD1782786FCBE9C1C43B51 /* Pods_GoodSleepHealthUITests.framework */; };
 		B7AC5F1459F954569893123C /* Pods_GoodSleepHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415F4B234A48B43BFD65F282 /* Pods_GoodSleepHealthTests.framework */; };
@@ -75,6 +76,7 @@
 		7BC48C172265A980000D9DA6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		7BC48C192265AFB0000D9DA6 /* GoodSleepHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoodSleepHealth.entitlements; sourceTree = "<group>"; };
 		7BC48C1A2265BB66000D9DA6 /* scheduleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = scheduleNotification.swift; path = GoodSleepHealth/CommonUtil/scheduleNotification.swift; sourceTree = "<group>"; };
+		7BC48C1C2265F523000D9DA6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		984081E6FA440ED72BE0000C /* Pods-GoodSleepHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodSleepHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodSleepHealth/Pods-GoodSleepHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		9D077EE00B7B6393BFACC84E /* Pods-GoodSleepHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodSleepHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodSleepHealth/Pods-GoodSleepHealth.release.xcconfig"; sourceTree = "<group>"; };
 		9EF9D6500E70A8AE1F5F5F26 /* Pods-GoodSleepHealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodSleepHealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodSleepHealthTests/Pods-GoodSleepHealthTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		7B375C8722645B86001953B6 = {
 			isa = PBXGroup;
 			children = (
+				7BC48C1C2265F523000D9DA6 /* CollectionViewCell.swift */,
 				7BC48C1A2265BB66000D9DA6 /* scheduleNotification.swift */,
 				7B375C9222645B86001953B6 /* GoodSleepHealth */,
 				7B375CAA22645B88001953B6 /* GoodSleepHealthTests */,
@@ -470,6 +473,7 @@
 				7BC48C1B2265BB66000D9DA6 /* scheduleNotification.swift in Sources */,
 				7B375D0F22649D88001953B6 /* usersWebService.swift in Sources */,
 				7B375C9C22645B87001953B6 /* GoodSleepHealth.xcdatamodeld in Sources */,
+				7BC48C1D2265F523000D9DA6 /* CollectionViewCell.swift in Sources */,
 				7B375D152264AE6F001953B6 /* BaseViewController.swift in Sources */,
 				7B375D1122649ECB001953B6 /* HomeViewController.swift in Sources */,
 				7B375D132264A410001953B6 /* CommonUtil.swift in Sources */,

@@ -13,6 +13,6 @@ struct segueIdentifier {
 }
 class CommonUtil: NSObject {
     static var webViewUrl = ""
-    static var morningAlarm:TimeInterval?
-    static var eveningAlaram:TimeInterval?
+    static var morningAlarm:Date?
+    static var eveningAlaram:Date?
 }
