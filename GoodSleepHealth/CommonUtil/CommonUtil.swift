@@ -7,3 +7,12 @@
 //
 
 import Foundation
+struct segueIdentifier {
+    static let LOGINTOHOME = "LOGINTOHOME"
+    static let SETTINGALARM = "SETTINGALARM"
+}
+class CommonUtil: NSObject {
+    static var webViewUrl = ""
+    static var morningAlarm:TimeInterval?
+    static var eveningAlaram:TimeInterval?
+}

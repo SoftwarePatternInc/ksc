@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController{
 
     
     @IBOutlet weak var userEmailTextField: UITextField!
@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     // MARK:  ViewController Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -28,14 +29,29 @@ class LoginViewController: UIViewController {
         
     }
     // MARK:  IBOutlet Action Methods
-    
     @IBAction func loginButtonTap(_ sender: UIButton) {
-        
+        //if userEmailTextField.text == "good"{
+            performSegue(withIdentifier: segueIdentifier.LOGINTOHOME, sender: self)
+        //}
     }
+    // MARK:  Delegate Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == segueIdentifier.LOGINTOHOME{
+            _ = segue.destination as! NavigationViewController
+            
+        }
     }
     
-
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
