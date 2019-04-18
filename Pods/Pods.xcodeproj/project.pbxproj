@@ -8,49 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		0768C26C48F3033F7D882AE770AE9095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		1FC3FD39157C2FFFF3869A1300730086 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F2193A7576E5D0CE09BB9AA50723 /* SessionDelegate.swift */; };
+		14F1BF94ECD1925BC609A2FB648B3464 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */; };
+		20AA2881E723E7C6F30F9188691434A9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */; };
 		35D9E9F1650F3B1B0EDAAA2DABDC0F3C /* Pods-GoodSleepHealth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9535634A23C78C1DCAABCA58EC64E00 /* Pods-GoodSleepHealth-dummy.m */; };
-		36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8468B99E69449D7CA0FF01271861741 /* TaskDelegate.swift */; };
-		4166FF40B40E7BBFBF6FDDD0FBEB039F /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B4C132A8342CA3DC61E774A8B00164 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E1A913EFB404FB11524718FF0298EFE /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE577BB9EAC8D110EBAB64FA44BC59C6 /* Alamofire.swift */; };
-		500C8EDA60C07B0F127C7FC385E17D38 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D552C9F7FBA461B1F12787AAE7E655C /* Notifications.swift */; };
-		52237C35642089F77DD4D723CEB25737 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506E1FB586DC2034082C8AB8305E984 /* Response.swift */; };
+		4DFBD112F5A6259EB4A4BE1D6D96F4FB /* Pods-GoodSleepHealthTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B0587241CEE96F302DBF7067E6656 /* Pods-GoodSleepHealthTests-dummy.m */; };
+		5411D171928CC3D4DCCAE07A590C9E65 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */; };
 		54A82B8B5F886D0746DA0B38AF9BC3BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		58A9719584AFA2D108D9E5C585A79329 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E2D2CFA62A23DEF3A46168D7762CD /* Validation.swift */; };
-		5EE5FED83B90A606A763CF1114D1D6FB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BE82C62E353308674B24A44C8BEBC3 /* ResponseSerialization.swift */; };
-		6A3188FFE3F0600FDDE13B6DEC95F985 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EF45EC351EAAECA6C3CA3B5DD83EA3 /* SideMenu-dummy.m */; };
-		6B8D3F264A3291A18A71CB959670E367 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		6BEA14EC335E07C7063CD1383C0C443C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848FAC826A44AD72894F0ED2EFADB9C /* ServerTrustPolicy.swift */; };
-		7068E8A7DDC1424EE8F24BC77E8746F4 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC953C0AC37D4D2B971BE74A31B4677 /* SessionManager.swift */; };
-		721F2199C3C7DF940A0F375307DB8EDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EEFE1B954166A144516CF8E078CE6 /* ParameterEncoding.swift */; };
-		7A09C4E9E78E70135A6BD79AC478C6F2 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53831E4A7A428337B91F300E5C82CCB /* UITableViewVibrantCell.swift */; };
+		58AA33CA484041FB9D3E82F6E2D507BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		6CD8431F75CB09665F4365954BF14995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		8BE890BC90039DF8D57D8C2CE5CEC0C1 /* Pods-GoodSleepHealthUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4242674A49C9C3405A96A7CA43A4EA35 /* Pods-GoodSleepHealthUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C3E15E4A1BACC6EA8719B1ABAD1FC9 /* Request.swift */; };
-		9E6456D3A9AC0B223A05A0614B338884 /* Pods-GoodSleepHealthTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B0587241CEE96F302DBF7067E6656 /* Pods-GoodSleepHealthTests-dummy.m */; };
-		B35176B79FC0BA234AEC4905BE0BFC55 /* Pods-GoodSleepHealthTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3F403DEC1C633B9B27EB5A4254B1CC /* Pods-GoodSleepHealthTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920ACF5E9A8A6B2693B889511749E6B6 /* Timeline.swift */; };
-		B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DF1C720404A44663980B85FCC845E /* NetworkReachabilityManager.swift */; };
-		BA2931D657C486CD064859DCBCB39047 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C93BF8705EF5AF92C2816B022108B1 /* SideMenuManager.swift */; };
-		BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610AF290C5CF5896D4973868C4F1F3D /* AFError.swift */; };
-		C10040817CDCCCD1DE0DC2783ADF565A /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EE1090C2FF1E1C29BACC7664CE44A /* SideMenuTransition.swift */; };
-		C1F111D476DCE4FA75CE7B8E31FA0358 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D27ABCA6E6BD7ACE07270B34D6ABA /* UISideMenuNavigationController.swift */; };
+		995825E731EA4F0A56B6218DBA258FA7 /* Pods-GoodSleepHealthTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3F403DEC1C633B9B27EB5A4254B1CC /* Pods-GoodSleepHealthTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A316959E2FC7E27731516E57E9ECD098 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC58666D805049452B7F9A8AC9FF41AA /* Pods-GoodSleepHealthUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E136649C7D9ECAF24C35E017181423AA /* Pods-GoodSleepHealthUITests-dummy.m */; };
-		D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 317E6DFEC47671F3B3643122CC85F535 /* Alamofire-dummy.m */; };
-		DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DC4FACC21D8424B3690C37F22DD41 /* DispatchQueue+Alamofire.swift */; };
 		EB21E065A4A40597A57A7379F56C9D27 /* Pods-GoodSleepHealth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 492A488C9D19F86F2E70F197608B4594 /* Pods-GoodSleepHealth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F91444AA95090F56A87AD193927039B8 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9EA61D484CC15FDDAB0D8C0D26D7949 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993422AA73BF126D7FB4775FDF16303 /* Result.swift */; };
-		FF9C7BC64DB23D2CED48197DE67F0335 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4569824A11E16025A8ED135308614C3 /* MultipartFormData.swift */; };
+		FAD51DEFB01A7B81E697E1841F7F037E /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */; };
+		FCA75D94D0F07277D2F5ACB8B390A4F6 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42681752244459D0A3194A68F9356E7B /* PBXContainerItemProxy */ = {
+		1C98C5EA4FA39609942684F5E97788F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B24D03D98A441C4ED19CE466B10C003B;
+			remoteGlobalIDString = CC2FD0C010F32DEFFDCC381366D422AA;
+			remoteInfo = "Pods-GoodSleepHealth";
+		};
+		374C6897188A744349C00CB2DD40F157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF4E3DA913C75A857A7A7E4FA1AEBBF;
 			remoteInfo = SideMenu;
 		};
 		46361017B5B82F8A017B96285DE71356 /* PBXContainerItemProxy */ = {
@@ -60,117 +47,71 @@
 			remoteGlobalIDString = CC2FD0C010F32DEFFDCC381366D422AA;
 			remoteInfo = "Pods-GoodSleepHealth";
 		};
-		4DA1FD8243FE1DCEDE8420677603841D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
-			remoteInfo = Alamofire;
-		};
-		693DE218D0AC2CEC1C836DE67FD0F853 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC2FD0C010F32DEFFDCC381366D422AA;
-			remoteInfo = "Pods-GoodSleepHealth";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
 		05FCDA90709C8B5864A94FA08AB5578B /* Pods-GoodSleepHealth-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodSleepHealth-resources.sh"; sourceTree = "<group>"; };
-		0610AF290C5CF5896D4973868C4F1F3D /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		08C93BF8705EF5AF92C2816B022108B1 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
-		09B7F2193A7576E5D0CE09BB9AA50723 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		0E9E2D2CFA62A23DEF3A46168D7762CD /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		11B4C132A8342CA3DC61E774A8B00164 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		1A2CF60033C36F98EB5130FF7914490F /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		1C1D27ABCA6E6BD7ACE07270B34D6ABA /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		0AC3F6E2B85B64D7AED49071CEB17CA8 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 		1F70FF11F4B87D5F5E499D07FFFBDB1A /* Pods-GoodSleepHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodSleepHealth.release.xcconfig"; sourceTree = "<group>"; };
+		1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
 		22F360849DE7F7CEB0609CFB12BA9D5C /* Pods-GoodSleepHealth-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodSleepHealth-frameworks.sh"; sourceTree = "<group>"; };
 		26EBC24CBE0F7DBDAFFC710BFD00F82E /* Pods-GoodSleepHealthUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodSleepHealthUITests-resources.sh"; sourceTree = "<group>"; };
-		281D5325A0A19ADA742DA661F5B3E616 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		2848FAC826A44AD72894F0ED2EFADB9C /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		28542D28C6E52EAA073EDC4CD27819C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		297529A52922E1B3E5ADC8FFFF6AAC20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D2EEFE1B954166A144516CF8E078CE6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		317E6DFEC47671F3B3643122CC85F535 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		33761B027566FAAA4074833FAF60C9F3 /* Pods-GoodSleepHealth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodSleepHealth.modulemap"; sourceTree = "<group>"; };
-		3EC953C0AC37D4D2B971BE74A31B4677 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		41CF3D5D7073775E072BB1A89CAD3623 /* Pods-GoodSleepHealthUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodSleepHealthUITests.modulemap"; sourceTree = "<group>"; };
 		4242674A49C9C3405A96A7CA43A4EA35 /* Pods-GoodSleepHealthUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodSleepHealthUITests-umbrella.h"; sourceTree = "<group>"; };
-		48BE82C62E353308674B24A44C8BEBC3 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		492A488C9D19F86F2E70F197608B4594 /* Pods-GoodSleepHealth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodSleepHealth-umbrella.h"; sourceTree = "<group>"; };
-		54136377FA8E7A956107E74578B3D501 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5506E1FB586DC2034082C8AB8305E984 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		55C42E7936D52470E56D3E16F55640EE /* Pods-GoodSleepHealthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodSleepHealthUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5993422AA73BF126D7FB4775FDF16303 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		5E4A21B6AA747AC9FD670B63FF747E30 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62AB8636D6D24F43FEF9EFD49491005C /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		6C3EE1090C2FF1E1C29BACC7664CE44A /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		587F374D63C40B819423765845E7B53F /* Pods_GoodSleepHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		606BD2B50ED98151BB84DE476A541232 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		6E37222EDE8EDFA47FF514685E97C3D8 /* Pods-GoodSleepHealthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodSleepHealthUITests.release.xcconfig"; sourceTree = "<group>"; };
 		746C2B9219DFC660F37626A0B4943AF4 /* Pods-GoodSleepHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodSleepHealth.debug.xcconfig"; sourceTree = "<group>"; };
-		766DC344FFEB4FA1990DE3B97AEF9F1F /* Pods_GoodSleepHealthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B1DE91939D828C6355ED7E9AFAE172 /* Pods-GoodSleepHealthUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodSleepHealthUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		79F6BF222002B55319892361628FE49B /* Pods-GoodSleepHealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodSleepHealthTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		7C2B212EE665A1CD3064A65D49A7BAA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4D1231F4F473DA9052F256693C0139 /* Pods-GoodSleepHealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodSleepHealthTests.debug.xcconfig"; sourceTree = "<group>"; };
-		85445FF7C75667C50A2974F9010A1B2B /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
 		89452A0F284B0559136191D5E0191694 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A256B8E4DFD771D4FA3461594D4182E /* Pods-GoodSleepHealthUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodSleepHealthUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8A4458CC9F408FF2865C24C017AF767C /* Pods-GoodSleepHealthTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodSleepHealthTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8A62622C85ABA860F12E55DBC678F00F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		8C4DF1C720404A44663980B85FCC845E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		8D552C9F7FBA461B1F12787AAE7E655C /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		8F3F403DEC1C633B9B27EB5A4254B1CC /* Pods-GoodSleepHealthTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodSleepHealthTests-umbrella.h"; sourceTree = "<group>"; };
 		907B0587241CEE96F302DBF7067E6656 /* Pods-GoodSleepHealthTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodSleepHealthTests-dummy.m"; sourceTree = "<group>"; };
-		920ACF5E9A8A6B2693B889511749E6B6 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94FC4C0ABC91E0ACCEF21794FBB8E847 /* Pods-GoodSleepHealthUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodSleepHealthUITests-frameworks.sh"; sourceTree = "<group>"; };
-		A195E3B79F8C3596895FF048DA21CD62 /* Pods_GoodSleepHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9535634A23C78C1DCAABCA58EC64E00 /* Pods-GoodSleepHealth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodSleepHealth-dummy.m"; sourceTree = "<group>"; };
-		B0C3E15E4A1BACC6EA8719B1ABAD1FC9 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		B1FEA6E4D05C927FF15906B3901BB937 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		B5EF45EC351EAAECA6C3CA3B5DD83EA3 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		BE577BB9EAC8D110EBAB64FA44BC59C6 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		C2C7908B8A4860109CD32D3A0C0BDB8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
 		C5078C1A6AE4C8C37664205237367802 /* Pods-GoodSleepHealthTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodSleepHealthTests-resources.sh"; sourceTree = "<group>"; };
-		C53831E4A7A428337B91F300E5C82CCB /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		C7178CF66412D1E830439C207D73BA58 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6DAF5A013484CEABA3F63443787B4C /* Pods_GoodSleepHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0FF5DED73D98B4194CC71ADE50D1E6 /* Pods-GoodSleepHealth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodSleepHealth-acknowledgements.plist"; sourceTree = "<group>"; };
-		D40FA5F1D4BE23F3D5A0DC383A1303C1 /* Pods_GoodSleepHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4569824A11E16025A8ED135308614C3 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DA33CEBECDBA8C57A09CACC2DE321320 /* Pods-GoodSleepHealthTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodSleepHealthTests.modulemap"; sourceTree = "<group>"; };
+		DB27BF7FBA6CCB248852E264CB50D52B /* Pods_GoodSleepHealthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodSleepHealthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E136649C7D9ECAF24C35E017181423AA /* Pods-GoodSleepHealthUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodSleepHealthUITests-dummy.m"; sourceTree = "<group>"; };
+		EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		EEAAA6BFA12D55FE654249B89D709200 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
 		F717C3E010C640A2AF1780A07484D703 /* Pods-GoodSleepHealth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodSleepHealth-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8468B99E69449D7CA0FF01271861741 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		F8577EF8A84B43D732182ECB00E180CE /* Pods-GoodSleepHealthTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodSleepHealthTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F91444AA95090F56A87AD193927039B8 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		FBC4E77D74099C42E064A7819ECBD762 /* Pods-GoodSleepHealthTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodSleepHealthTests-frameworks.sh"; sourceTree = "<group>"; };
-		FD0DC4FACC21D8424B3690C37F22DD41 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14E4F4CEC1278B6F3D277E9575DE2DFA /* Frameworks */ = {
+		3DF4F32C9A7222F46A2A0860AE31A1D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721F2199C3C7DF940A0F375307DB8EDC /* Foundation.framework in Frameworks */,
+				6CD8431F75CB09665F4365954BF14995 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32A2A9DDD09CD8CADE56540E7A94BD8F /* Frameworks */ = {
+		4858B138DC4593178F739F24EFD5BA38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8D3F264A3291A18A71CB959670E367 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E8AF668A2161F7D6F680F721DB65D2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */,
+				58AA33CA484041FB9D3E82F6E2D507BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,25 +134,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		118755A00CC17C2CDAA1774D467547BA /* SideMenu */ = {
+		0588B462469020386FC4A4F5450A2C47 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				08C93BF8705EF5AF92C2816B022108B1 /* SideMenuManager.swift */,
-				6C3EE1090C2FF1E1C29BACC7664CE44A /* SideMenuTransition.swift */,
-				1C1D27ABCA6E6BD7ACE07270B34D6ABA /* UISideMenuNavigationController.swift */,
-				C53831E4A7A428337B91F300E5C82CCB /* UITableViewVibrantCell.swift */,
-				BEBDEA3DE9C5483996810502DB0CFB6D /* Support Files */,
+				EEAAA6BFA12D55FE654249B89D709200 /* Info.plist */,
+				606BD2B50ED98151BB84DE476A541232 /* SideMenu.modulemap */,
+				F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */,
+				1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */,
+				0AC3F6E2B85B64D7AED49071CEB17CA8 /* SideMenu-prefix.pch */,
+				7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */,
 			);
-			path = SideMenu;
-			sourceTree = "<group>";
-		};
-		1CD857FF0D124601A982C22B9F377AF1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B65AA8E754E6C7B122DB703CEE01CA93 /* Alamofire */,
-				118755A00CC17C2CDAA1774D467547BA /* SideMenu */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
 		2BB93222B4B4023232EAA4703B62D81B /* Pods-GoodSleepHealth */ = {
@@ -238,6 +172,14 @@
 				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		4C7DECB9505A3661801AB8D77F9249EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		4DD486985E1925128D41B2D8F72EE035 /* Targets Support Files */ = {
@@ -268,6 +210,18 @@
 			path = "Target Support Files/Pods-GoodSleepHealthTests";
 			sourceTree = "<group>";
 		};
+		6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */,
+				A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */,
+				EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */,
+				38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */,
+				0588B462469020386FC4A4F5450A2C47 /* Support Files */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		62B26E2D1BA847EB8D052718AE27748F /* Pods-GoodSleepHealthUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,66 +240,26 @@
 			path = "Target Support Files/Pods-GoodSleepHealthUITests";
 			sourceTree = "<group>";
 		};
-		78B5FD3EC199AC24224D9B47D76F167D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A62622C85ABA860F12E55DBC678F00F /* Alamofire.modulemap */,
-				B1FEA6E4D05C927FF15906B3901BB937 /* Alamofire.xcconfig */,
-				317E6DFEC47671F3B3643122CC85F535 /* Alamofire-dummy.m */,
-				281D5325A0A19ADA742DA661F5B3E616 /* Alamofire-prefix.pch */,
-				F91444AA95090F56A87AD193927039B8 /* Alamofire-umbrella.h */,
-				297529A52922E1B3E5ADC8FFFF6AAC20 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		7A0A499400BF494D47063C725A78EEC4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				54136377FA8E7A956107E74578B3D501 /* Alamofire.framework */,
-				D40FA5F1D4BE23F3D5A0DC383A1303C1 /* Pods_GoodSleepHealth.framework */,
-				A195E3B79F8C3596895FF048DA21CD62 /* Pods_GoodSleepHealthTests.framework */,
-				766DC344FFEB4FA1990DE3B97AEF9F1F /* Pods_GoodSleepHealthUITests.framework */,
-				5E4A21B6AA747AC9FD670B63FF747E30 /* SideMenu.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1CD857FF0D124601A982C22B9F377AF1 /* Pods */,
-				7A0A499400BF494D47063C725A78EEC4 /* Products */,
+				4C7DECB9505A3661801AB8D77F9249EF /* Pods */,
+				A1F2D1AAD947BCCDB552A1255D94843F /* Products */,
 				4DD486985E1925128D41B2D8F72EE035 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B65AA8E754E6C7B122DB703CEE01CA93 /* Alamofire */ = {
+		A1F2D1AAD947BCCDB552A1255D94843F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0610AF290C5CF5896D4973868C4F1F3D /* AFError.swift */,
-				BE577BB9EAC8D110EBAB64FA44BC59C6 /* Alamofire.swift */,
-				FD0DC4FACC21D8424B3690C37F22DD41 /* DispatchQueue+Alamofire.swift */,
-				D4569824A11E16025A8ED135308614C3 /* MultipartFormData.swift */,
-				8C4DF1C720404A44663980B85FCC845E /* NetworkReachabilityManager.swift */,
-				8D552C9F7FBA461B1F12787AAE7E655C /* Notifications.swift */,
-				2D2EEFE1B954166A144516CF8E078CE6 /* ParameterEncoding.swift */,
-				B0C3E15E4A1BACC6EA8719B1ABAD1FC9 /* Request.swift */,
-				5506E1FB586DC2034082C8AB8305E984 /* Response.swift */,
-				48BE82C62E353308674B24A44C8BEBC3 /* ResponseSerialization.swift */,
-				5993422AA73BF126D7FB4775FDF16303 /* Result.swift */,
-				2848FAC826A44AD72894F0ED2EFADB9C /* ServerTrustPolicy.swift */,
-				09B7F2193A7576E5D0CE09BB9AA50723 /* SessionDelegate.swift */,
-				3EC953C0AC37D4D2B971BE74A31B4677 /* SessionManager.swift */,
-				F8468B99E69449D7CA0FF01271861741 /* TaskDelegate.swift */,
-				920ACF5E9A8A6B2693B889511749E6B6 /* Timeline.swift */,
-				0E9E2D2CFA62A23DEF3A46168D7762CD /* Validation.swift */,
-				78B5FD3EC199AC24224D9B47D76F167D /* Support Files */,
+				587F374D63C40B819423765845E7B53F /* Pods_GoodSleepHealth.framework */,
+				CA6DAF5A013484CEABA3F63443787B4C /* Pods_GoodSleepHealthTests.framework */,
+				DB27BF7FBA6CCB248852E264CB50D52B /* Pods_GoodSleepHealthUITests.framework */,
+				C7178CF66412D1E830439C207D73BA58 /* SideMenu.framework */,
 			);
-			path = Alamofire;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -354,20 +268,6 @@
 				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BEBDEA3DE9C5483996810502DB0CFB6D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2C7908B8A4860109CD32D3A0C0BDB8A /* Info.plist */,
-				1A2CF60033C36F98EB5130FF7914490F /* SideMenu.modulemap */,
-				85445FF7C75667C50A2974F9010A1B2B /* SideMenu.xcconfig */,
-				B5EF45EC351EAAECA6C3CA3B5DD83EA3 /* SideMenu-dummy.m */,
-				62AB8636D6D24F43FEF9EFD49491005C /* SideMenu-prefix.pch */,
-				11B4C132A8342CA3DC61E774A8B00164 /* SideMenu-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,62 +289,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A01E9579472842B77502A60D4664B578 /* Headers */ = {
+		86FC28F47AC3E49CB48282B2679AD230 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4166FF40B40E7BBFBF6FDDD0FBEB039F /* SideMenu-umbrella.h in Headers */,
+				A316959E2FC7E27731516E57E9ECD098 /* SideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6A607506FEAAC7C41268D3E5CF4E5FE /* Headers */ = {
+		FAB6BDDFB8662BAA3002A128888ED7C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD4440FE710E891596DD0017D4E0E86D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B35176B79FC0BA234AEC4905BE0BFC55 /* Pods-GoodSleepHealthTests-umbrella.h in Headers */,
+				995825E731EA4F0A56B6218DBA258FA7 /* Pods-GoodSleepHealthTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		76CAD39E3CF51613BBE6DE0671C3C197 /* Pods-GoodSleepHealthTests */ = {
+		0FA8E8D9CE3097A87E62B016037D34DB /* Pods-GoodSleepHealthTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1AD321EA76852E6EE580F0BD35B6BBA /* Build configuration list for PBXNativeTarget "Pods-GoodSleepHealthTests" */;
+			buildConfigurationList = 3392937ACC04070ECB98712FCD4084C7 /* Build configuration list for PBXNativeTarget "Pods-GoodSleepHealthTests" */;
 			buildPhases = (
-				AD4440FE710E891596DD0017D4E0E86D /* Headers */,
-				3AFC3771A840A51137954B704C3E41A1 /* Sources */,
-				32A2A9DDD09CD8CADE56540E7A94BD8F /* Frameworks */,
-				C62272F61162CBFA4FC58C1B2201CE26 /* Resources */,
+				FAB6BDDFB8662BAA3002A128888ED7C9 /* Headers */,
+				7F9E82E48F015C85E0B924F63F596D3A /* Sources */,
+				4858B138DC4593178F739F24EFD5BA38 /* Frameworks */,
+				8E152DF9215F261757F7894AA9490F39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				12C1982A09724BA8A042D1122E7E82F6 /* PBXTargetDependency */,
-				9ABA183C382DB0F1F12AA09F9E37AC28 /* PBXTargetDependency */,
-				26AE83FAAA85582ECD92F79E7A7358F4 /* PBXTargetDependency */,
+				EE64B482A629D3695B3E8531218D4CC3 /* PBXTargetDependency */,
+				87F599739433193AE9F585111CA00BD0 /* PBXTargetDependency */,
 			);
 			name = "Pods-GoodSleepHealthTests";
 			productName = "Pods-GoodSleepHealthTests";
-			productReference = A195E3B79F8C3596895FF048DA21CD62 /* Pods_GoodSleepHealthTests.framework */;
+			productReference = CA6DAF5A013484CEABA3F63443787B4C /* Pods_GoodSleepHealthTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B24D03D98A441C4ED19CE466B10C003B /* SideMenu */ = {
+		6AF4E3DA913C75A857A7A7E4FA1AEBBF /* SideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1B437E296BCE4A34F20637D6AD12241 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildConfigurationList = 313975FCADEE462B92108A7B0A79935D /* Build configuration list for PBXNativeTarget "SideMenu" */;
 			buildPhases = (
-				A01E9579472842B77502A60D4664B578 /* Headers */,
-				0AB2D5B258F5535512C2DFBF8FCD37CE /* Sources */,
-				14E4F4CEC1278B6F3D277E9575DE2DFA /* Frameworks */,
-				F4667BD67ACF5B03FF111F1C0C02B580 /* Resources */,
+				86FC28F47AC3E49CB48282B2679AD230 /* Headers */,
+				F36248B56F4AF13EA29C5E0192F111D5 /* Sources */,
+				3DF4F32C9A7222F46A2A0860AE31A1D0 /* Frameworks */,
+				5FD16FFABE6090D7094EFFB855820F23 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -452,7 +343,7 @@
 			);
 			name = SideMenu;
 			productName = SideMenu;
-			productReference = 5E4A21B6AA747AC9FD670B63FF747E30 /* SideMenu.framework */;
+			productReference = C7178CF66412D1E830439C207D73BA58 /* SideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C81B5808178B0A186DA6719CD64504BA /* Pods-GoodSleepHealthUITests */ = {
@@ -471,7 +362,7 @@
 			);
 			name = "Pods-GoodSleepHealthUITests";
 			productName = "Pods-GoodSleepHealthUITests";
-			productReference = 766DC344FFEB4FA1990DE3B97AEF9F1F /* Pods_GoodSleepHealthUITests.framework */;
+			productReference = DB27BF7FBA6CCB248852E264CB50D52B /* Pods_GoodSleepHealthUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CC2FD0C010F32DEFFDCC381366D422AA /* Pods-GoodSleepHealth */ = {
@@ -489,25 +380,7 @@
 			);
 			name = "Pods-GoodSleepHealth";
 			productName = "Pods-GoodSleepHealth";
-			productReference = D40FA5F1D4BE23F3D5A0DC383A1303C1 /* Pods_GoodSleepHealth.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E76458C58C9140B6A16D60547E68E80C /* Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */;
-			buildPhases = (
-				A6A607506FEAAC7C41268D3E5CF4E5FE /* Headers */,
-				CC399CEC576B42C962CEB290481CAF95 /* Sources */,
-				6E8AF668A2161F7D6F680F721DB65D2D /* Frameworks */,
-				3DDB7E21141D7764AE4658D5B6AFF8C6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = 54136377FA8E7A956107E74578B3D501 /* Alamofire.framework */;
+			productReference = 587F374D63C40B819423765845E7B53F /* Pods_GoodSleepHealth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -521,35 +394,34 @@
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
-				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7A0A499400BF494D47063C725A78EEC4 /* Products */;
+			productRefGroup = A1F2D1AAD947BCCDB552A1255D94843F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E76458C58C9140B6A16D60547E68E80C /* Alamofire */,
 				CC2FD0C010F32DEFFDCC381366D422AA /* Pods-GoodSleepHealth */,
-				76CAD39E3CF51613BBE6DE0671C3C197 /* Pods-GoodSleepHealthTests */,
+				0FA8E8D9CE3097A87E62B016037D34DB /* Pods-GoodSleepHealthTests */,
 				C81B5808178B0A186DA6719CD64504BA /* Pods-GoodSleepHealthUITests */,
-				B24D03D98A441C4ED19CE466B10C003B /* SideMenu */,
+				6AF4E3DA913C75A857A7A7E4FA1AEBBF /* SideMenu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3DDB7E21141D7764AE4658D5B6AFF8C6 /* Resources */ = {
+		5FD16FFABE6090D7094EFFB855820F23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C62272F61162CBFA4FC58C1B2201CE26 /* Resources */ = {
+		8E152DF9215F261757F7894AA9490F39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,13 +429,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4A6B3394423FA62D4A8B84E4800DD77 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4667BD67ACF5B03FF111F1C0C02B580 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,31 +445,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AB2D5B258F5535512C2DFBF8FCD37CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A3188FFE3F0600FDDE13B6DEC95F985 /* SideMenu-dummy.m in Sources */,
-				BA2931D657C486CD064859DCBCB39047 /* SideMenuManager.swift in Sources */,
-				C10040817CDCCCD1DE0DC2783ADF565A /* SideMenuTransition.swift in Sources */,
-				C1F111D476DCE4FA75CE7B8E31FA0358 /* UISideMenuNavigationController.swift in Sources */,
-				7A09C4E9E78E70135A6BD79AC478C6F2 /* UITableViewVibrantCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AFC3771A840A51137954B704C3E41A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E6456D3A9AC0B223A05A0614B338884 /* Pods-GoodSleepHealthTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DAB057FA37327BB4F2A71C3336B3993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC58666D805049452B7F9A8AC9FF41AA /* Pods-GoodSleepHealthUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9E82E48F015C85E0B924F63F596D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFBD112F5A6259EB4A4BE1D6D96F4FB /* Pods-GoodSleepHealthTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,57 +469,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC399CEC576B42C962CEB290481CAF95 /* Sources */ = {
+		F36248B56F4AF13EA29C5E0192F111D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */,
-				D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */,
-				4E1A913EFB404FB11524718FF0298EFE /* Alamofire.swift in Sources */,
-				DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */,
-				FF9C7BC64DB23D2CED48197DE67F0335 /* MultipartFormData.swift in Sources */,
-				B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */,
-				500C8EDA60C07B0F127C7FC385E17D38 /* Notifications.swift in Sources */,
-				796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */,
-				965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */,
-				52237C35642089F77DD4D723CEB25737 /* Response.swift in Sources */,
-				5EE5FED83B90A606A763CF1114D1D6FB /* ResponseSerialization.swift in Sources */,
-				F9EA61D484CC15FDDAB0D8C0D26D7949 /* Result.swift in Sources */,
-				6BEA14EC335E07C7063CD1383C0C443C /* ServerTrustPolicy.swift in Sources */,
-				1FC3FD39157C2FFFF3869A1300730086 /* SessionDelegate.swift in Sources */,
-				7068E8A7DDC1424EE8F24BC77E8746F4 /* SessionManager.swift in Sources */,
-				36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */,
-				B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */,
-				58A9719584AFA2D108D9E5C585A79329 /* Validation.swift in Sources */,
+				20AA2881E723E7C6F30F9188691434A9 /* SideMenu-dummy.m in Sources */,
+				FAD51DEFB01A7B81E697E1841F7F037E /* SideMenuManager.swift in Sources */,
+				5411D171928CC3D4DCCAE07A590C9E65 /* SideMenuTransition.swift in Sources */,
+				14F1BF94ECD1925BC609A2FB648B3464 /* UISideMenuNavigationController.swift in Sources */,
+				FCA75D94D0F07277D2F5ACB8B390A4F6 /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12C1982A09724BA8A042D1122E7E82F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
-			targetProxy = 4DA1FD8243FE1DCEDE8420677603841D /* PBXContainerItemProxy */;
-		};
-		26AE83FAAA85582ECD92F79E7A7358F4 /* PBXTargetDependency */ = {
+		87F599739433193AE9F585111CA00BD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
-			target = B24D03D98A441C4ED19CE466B10C003B /* SideMenu */;
-			targetProxy = 42681752244459D0A3194A68F9356E7B /* PBXContainerItemProxy */;
-		};
-		9ABA183C382DB0F1F12AA09F9E37AC28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-GoodSleepHealth";
-			target = CC2FD0C010F32DEFFDCC381366D422AA /* Pods-GoodSleepHealth */;
-			targetProxy = 693DE218D0AC2CEC1C836DE67FD0F853 /* PBXContainerItemProxy */;
+			target = 6AF4E3DA913C75A857A7A7E4FA1AEBBF /* SideMenu */;
+			targetProxy = 374C6897188A744349C00CB2DD40F157 /* PBXContainerItemProxy */;
 		};
 		D072D91ACEB12E6C06A6A4D006D1FEB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GoodSleepHealth";
 			target = CC2FD0C010F32DEFFDCC381366D422AA /* Pods-GoodSleepHealth */;
 			targetProxy = 46361017B5B82F8A017B96285DE71356 /* PBXContainerItemProxy */;
+		};
+		EE64B482A629D3695B3E8531218D4CC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GoodSleepHealth";
+			target = CC2FD0C010F32DEFFDCC381366D422AA /* Pods-GoodSleepHealth */;
+			targetProxy = 1C98C5EA4FA39609942684F5E97788F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -705,42 +539,9 @@
 			};
 			name = Release;
 		};
-		127688CB33D3A30D627FC90F29125F54 /* Debug */ = {
+		1036A3F418B278C06E1EC66F3DEF63FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F4D1231F4F473DA9052F256693C0139 /* Pods-GoodSleepHealthTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GoodSleepHealthTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoodSleepHealthTests/Pods-GoodSleepHealthTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A6D88974A19B903BD70FAB353EA2CDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1FEA6E4D05C927FF15906B3901BB937 /* Alamofire.xcconfig */;
+			baseConfigurationReference = F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -751,14 +552,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -770,7 +571,7 @@
 			};
 			name = Release;
 		};
-		28488E32F153B72430E68A7290280089 /* Release */ = {
+		4476F5F2F6CBE844FAC79E3D04F5DDBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79F6BF222002B55319892361628FE49B /* Pods-GoodSleepHealthTests.release.xcconfig */;
 			buildSettings = {
@@ -865,37 +666,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		6C6DFC3D3001B7A984E5BBFC1A2F2F44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85445FF7C75667C50A2974F9010A1B2B /* SideMenu.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -997,10 +767,11 @@
 			};
 			name = Debug;
 		};
-		D82FE86F2F9ACD17CE8C50F4BF9563B3 /* Release */ = {
+		A87ED52FC59E619AF7FDD9D6D4DF783F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85445FF7C75667C50A2974F9010A1B2B /* SideMenu.xcconfig */;
+			baseConfigurationReference = 7F4D1231F4F473DA9052F256693C0139 /* Pods-GoodSleepHealthTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1010,24 +781,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodSleepHealthTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodSleepHealthTests/Pods-GoodSleepHealthTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		EA12C4C411B3C9C5084E0C9ED3651A03 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1063,37 +834,6 @@
 			};
 			name = Release;
 		};
-		F23A6EEBDAD1F495009A4FC42D2BF2B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1FEA6E4D05C927FF15906B3901BB937 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F2E4C58281C3D5048230735AECA6D2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55C42E7936D52470E56D3E16F55640EE /* Pods-GoodSleepHealthUITests.debug.xcconfig */;
@@ -1127,6 +867,37 @@
 			};
 			name = Debug;
 		};
+		FD6479E5E0F90221F1C465561E12DA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1139,11 +910,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		313975FCADEE462B92108A7B0A79935D /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F23A6EEBDAD1F495009A4FC42D2BF2B2 /* Debug */,
-				1A6D88974A19B903BD70FAB353EA2CDE /* Release */,
+				FD6479E5E0F90221F1C465561E12DA34 /* Debug */,
+				1036A3F418B278C06E1EC66F3DEF63FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3392937ACC04070ECB98712FCD4084C7 /* Build configuration list for PBXNativeTarget "Pods-GoodSleepHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87ED52FC59E619AF7FDD9D6D4DF783F /* Debug */,
+				4476F5F2F6CBE844FAC79E3D04F5DDBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1153,24 +933,6 @@
 			buildConfigurations = (
 				F2E4C58281C3D5048230735AECA6D2CE /* Debug */,
 				001055CE0E6735DA511483A24FB99DC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1AD321EA76852E6EE580F0BD35B6BBA /* Build configuration list for PBXNativeTarget "Pods-GoodSleepHealthTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				127688CB33D3A30D627FC90F29125F54 /* Debug */,
-				28488E32F153B72430E68A7290280089 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1B437E296BCE4A34F20637D6AD12241 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C6DFC3D3001B7A984E5BBFC1A2F2F44 /* Debug */,
-				D82FE86F2F9ACD17CE8C50F4BF9563B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

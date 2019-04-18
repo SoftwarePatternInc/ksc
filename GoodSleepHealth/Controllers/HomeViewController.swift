@@ -10,17 +10,117 @@ import Foundation
 import UIKit
 import SafariServices
 import UserNotifications
-class HomeViewController: UIViewController,SFSafariViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class HomeViewController: UIViewController,SFSafariViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate {
+    
+    
+    
+    var data:String?
+    
+    @IBOutlet weak var weeksCollectionView: UICollectionView!
+    @IBOutlet weak var daysCollectionView: UICollectionView!
+    var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        weeksCollectionView.delegate = self
+        daysCollectionView.delegate = self
+        isLogin()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+       
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    @IBAction func settingTap(_ sender: UIButton) {
+        performSegue(withIdentifier: segueIdentifier.SETTINGALARM, sender: self)
+    }
+    
+    @IBAction func introductionButtonTap(_ sender: UIButton) {
+        CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/insomnia/insomnia_overview_2"
+        loadWebUrl()
+    }
+    @IBAction func privacyButtontap(_ sender: UIButton) {
+        CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/content/privacy"
+        loadWebUrl()
+    }
+    @IBAction func logoutTap(_ sender: UIBarButtonItem) {
+        print("Logout")
+        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "Startpage")
+        userDefaults.setValueWithBool(value: false, key: userDefaults.UserValues.login)
+        userDefaults.setValueWithBool(value: false, key: userDefaults.UserValues.intro)
+        DispatchQueue.main.async {
+            self.present(loginViewController!, animated: true, completion: nil)
+        }
+    }
+    
+    func isIntroShow(){
+        if !userDefaults.getValueWithBool(key: userDefaults.UserValues.intro){
+            CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/insomnia/insomnia_overview_2"
+            userDefaults.setValueWithBool(value: true, key: userDefaults.UserValues.intro)
+            
+            loadWebUrl()
+        }
+    }
+    func  isLogin() {
+       
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Startpage")
+        
+        if !userDefaults.getValueWithBool(key: userDefaults.UserValues.login){
+            DispatchQueue.main.async {
+                self.present(loginViewController!, animated: true, completion: nil)
+            }
+            
+        }
+        else{
+            isIntroShow()
+        }
+        
+            
+        
+    }
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    func loadWebUrl() {
+        DispatchQueue.main.async {
+        //let safariVc = SFSafariViewController(url: NSURL(string: CommonUtil.webViewUrl)! as URL)
+        print(CommonUtil.webViewUrl)
+            //safariVc.delegate = self
+        
+        //self.present(safariVc, animated: true, completion: nil)
+            guard let url = URL(string: CommonUtil.webViewUrl) else { return }
+            UIApplication.shared.open(url)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueIdentifier.SETTINGALARM{
+            if let vc = segue.destination as? AlaramSettingViewController {
+                print(vc.isViewLoaded)
+            }
+            
+        }
+        if segue.identifier == "navigation"{
+            if let vc = segue.destination as? WebViewController {
+                print(vc.isViewLoaded)
+            }
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-            return items.count
+        return items.count
         
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
+        
+        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,48 +144,39 @@ class HomeViewController: UIViewController,SFSafariViewControllerDelegate,UIColl
         }
         
     }
+   /*   func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let indexPath = weeksCollectionView.indexPathForItem(at: weeksCollectionView.center)
+        weeksCollectionView.scrollToItem(at: indexPath!, at: .centeredHorizontally, animated: true)
+    }*/
+  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
     
-    var data:String?
-    
-    @IBOutlet weak var weeksCollectionView: UICollectionView!
-    @IBOutlet weak var daysCollectionView: UICollectionView!
-    var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        if scrollView == weeksCollectionView{
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        weeksCollectionView.delegate = self
-        daysCollectionView.delegate = self
+            var closestCell : UICollectionViewCell = weeksCollectionView.visibleCells.first!
+            for cell in weeksCollectionView!.visibleCells as [UICollectionViewCell] {
+                let closestCellDelta = abs(closestCell.center.x - weeksCollectionView.bounds.size.width/2.0 - weeksCollectionView.contentOffset.x)
+                let cellDelta = abs(cell.center.x - weeksCollectionView.bounds.size.width/2.0 - weeksCollectionView.contentOffset.x)
+                if (cellDelta < closestCellDelta){
+                    closestCell = cell
+                }
+            }
+            let indexPath = weeksCollectionView.indexPath(for: closestCell)
+            weeksCollectionView.scrollToItem(at: indexPath!, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
+        }
+        else{
+            var closestCell : UICollectionViewCell = daysCollectionView.visibleCells.first!
+            for cell in daysCollectionView!.visibleCells as [UICollectionViewCell] {
+                let closestCellDelta = abs(closestCell.center.x - daysCollectionView.bounds.size.width/2.0 - daysCollectionView.contentOffset.x)
+                let cellDelta = abs(cell.center.x - daysCollectionView.bounds.size.width/2.0 - daysCollectionView.contentOffset.x)
+                if (cellDelta < closestCellDelta){
+                    closestCell = cell
+                }
+            }
+            let indexPath = daysCollectionView.indexPath(for: closestCell)
+            daysCollectionView.scrollToItem(at: indexPath!, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
     }
-    @IBAction func settingTap(_ sender: UIButton) {
-        performSegue(withIdentifier: segueIdentifier.SETTINGALARM, sender: self)
     }
     
-    @IBAction func introductionButtonTap(_ sender: UIButton) {
-        CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/insomnia/insomnia_overview_2"
-        loadWebUrl()
-    }
-    @IBAction func privacyButtontap(_ sender: UIButton) {
-        CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/content/privacy"
-        loadWebUrl()
-    }
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-    func loadWebUrl() {
-        let safariVc = SFSafariViewController(url: NSURL(string: CommonUtil.webViewUrl)! as URL)
-        self.present(safariVc, animated: true, completion: nil)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == segueIdentifier.SETTINGALARM{
-            if let vc = segue.destination as? AlaramSettingViewController {
-                print(vc.isViewLoaded)
-            }
-            
-        }
-        if segue.identifier == "navigation"{
-            if let vc = segue.destination as? WebViewController {
-                print(vc.isViewLoaded)
-            }
-        }
-    }
+    
+    
 }

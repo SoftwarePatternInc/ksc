@@ -4,10 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GoodSleepHealth.xcscheme_^#shared#^_</key>
+		<key>GHS_DEBUG.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>GoodSleepHealth.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7B2DCD1F22662A410079BD40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B2DCD3A22662AD70079BD40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B375C8F22645B86001953B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B375CA622645B88001953B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B375CB122645B88001953B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

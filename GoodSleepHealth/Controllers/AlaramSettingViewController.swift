@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 import UserNotifications
-class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
+import AudioToolbox
+class AlaramSettingViewController: UIViewController,UNUserNotificationCenterDelegate {
     
     
     @IBOutlet weak var morningAlarmPicker: UIDatePicker!
@@ -17,9 +18,14 @@ class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        morningAlarmPicker.timeZone = TimeZone(secondsFromGMT: 5*60*60)
+//        sender.timeZone = Calendar.current.timeZone
+//        sender.locale = Calendar.current.locale
         
-        
+        UNUserNotificationCenter.current().delegate = self as UNUserNotificationCenterDelegate
+        morningAlarmPicker.timeZone = Calendar.current.timeZone
+        morningAlarmPicker.locale =  Calendar.current.locale
+        let s =  SystemSoundID(integerLiteral: 1304)
+        AudioServicesPlayAlertSound(s)
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -27,9 +33,29 @@ class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
     }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        print("Tapped in notification")
+    }
     
+    //This is key callback to present notification while the app is in foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        print("Notification being triggered")
+        //You can either present alert ,sound or increase badge while the app is in foreground too with ios 10
+        //to distinguish between notifications
+        if notification.request.identifier == notificationIdentifier.identifier{
+            
+            completionHandler( [.alert,.sound,.badge])
+            
+        }
+    }
     @IBAction func morningPickerTap(_ sender: UIDatePicker) {
+        //print(sender.date)
         getTime(sender: sender,morning: true)
+//        let date = sender.date
+//        let strTime = date.dateStringWith(strFormat: "yyyy/MM/dd hh:mm a")
+//        print(strTime)
     }
     @IBAction func eveningPickerTap(_ sender: UIDatePicker) {
         getTime(sender: sender,morning: false)
@@ -47,11 +73,11 @@ class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
         notify.scheduleNotification(notificationType: "Evening Alaram", timeInterval: eveningTimeInterval)
         
     }
+    
     func getTime(sender:UIDatePicker,morning:Bool)
     {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "hh:mm:ss a"
         let outputTimeInterval = sender.date
+        print("Phone Date :\(Date()) .. Picker Date \(outputTimeInterval)")
         
         if morning{
             CommonUtil.morningAlarm = outputTimeInterval
@@ -60,7 +86,6 @@ class AlaramSettingViewController: UIViewController,UIPickerViewDelegate {
             CommonUtil.eveningAlaram = outputTimeInterval
         }
         print("ouptputTime: \(outputTimeInterval)")
-        //print(parseDuration(ouptputTime))
     }
     func parseDuration(_ timeString:String) -> TimeInterval {
         guard !timeString.isEmpty else {

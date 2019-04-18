@@ -9,7 +9,6 @@ target 'GoodSleepHealth' do
 
   target 'GoodSleepHealthTests' do
     inherit! :search_paths
-    pod 'Alamofire', '~> 4.4'
     pod 'SideMenu', '~> 4.0.0'
   end
 
