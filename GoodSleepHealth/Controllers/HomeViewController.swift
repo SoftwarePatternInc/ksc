@@ -10,6 +10,16 @@ import Foundation
 import UIKit
 import SafariServices
 import UserNotifications
+import PDFKit
+
+extension UIViewController:UIDocumentInteractionControllerDelegate{
+    func viewPdfFile(fileName: String) {
+        let fileURL = Bundle.main.url(forResource: fileName, withExtension: "pdf")
+        let dc = UIDocumentInteractionController(url: fileURL!)
+        dc.delegate = self
+        dc.presentPreview(animated: true)
+    }
+}
 class HomeViewController: UIViewController,SFSafariViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate {
     
     
@@ -34,34 +44,43 @@ class HomeViewController: UIViewController,SFSafariViewControllerDelegate,UIColl
     override func viewDidAppear(_ animated: Bool) {
         
     }
+    //MARK: UIDocumentInteractionController delegates
+    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
+        return self//or use return self.navigationController for fetching app navigation bar colour
+    }
     @IBAction func settingTap(_ sender: UIButton) {
         performSegue(withIdentifier: segueIdentifier.SETTINGALARM, sender: self)
     }
     
+    @IBAction func disclaimerButtonTap(_ sender: UIButton) {
+        viewPdfFile(fileName: fileNames.disclaimerFile)
+    }
+    @IBAction func termsButtonTap(_ sender: UIButton) {
+        viewPdfFile(fileName: fileNames.termsFile)
+    }
     @IBAction func introductionButtonTap(_ sender: UIButton) {
-        CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/insomnia/insomnia_overview_2"
-        loadWebUrl()
+        viewPdfFile(fileName: fileNames.introductionFile)
     }
     @IBAction func privacyButtontap(_ sender: UIButton) {
-        CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/content/privacy"
-        loadWebUrl()
+        
+       viewPdfFile(fileName: fileNames.privacyFile)
     }
+    
     @IBAction func logoutTap(_ sender: UIBarButtonItem) {
         print("Logout")
         let loginViewController = storyboard?.instantiateViewController(withIdentifier: "Startpage")
         userDefaults.setValueWithBool(value: false, key: userDefaults.UserValues.login)
         userDefaults.setValueWithBool(value: false, key: userDefaults.UserValues.intro)
         DispatchQueue.main.async {
+            self.dismiss(animated: true, completion: nil)
             self.present(loginViewController!, animated: true, completion: nil)
         }
     }
     
     func isIntroShow(){
         if !userDefaults.getValueWithBool(key: userDefaults.UserValues.intro){
-            CommonUtil.webViewUrl = "https://www.goodsleephealth.ca/insomnia/insomnia_overview_2"
-            userDefaults.setValueWithBool(value: true, key: userDefaults.UserValues.intro)
-            
-            loadWebUrl()
+              userDefaults.setValueWithBool(value: true, key: userDefaults.UserValues.intro)
+            viewPdfFile(fileName: fileNames.introductionFile)
         }
     }
     func  isLogin() {

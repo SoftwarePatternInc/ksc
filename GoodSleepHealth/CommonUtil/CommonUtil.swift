@@ -43,6 +43,13 @@ import Alamofire
 struct notificationIdentifier {
    static let identifier = UUID().uuidString
 }
+struct fileNames {
+    static let privacyFile = "Privacy Statement"
+    static let introductionFile = "Insomnia Introduction"
+    static let termsFile = "Terms of Use Agreement"
+    static let disclaimerFile = "DISCLAIMER"
+    
+}
 struct segueIdentifier {
     static let LOGINTOHOME = "LOGINTOHOME"
     static let SETTINGALARM = "SETTINGALARM"

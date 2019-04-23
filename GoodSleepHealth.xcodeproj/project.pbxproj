@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B17D9B0226829610089A86B /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B17D9AB226822890089A86B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B375C9422645B87001953B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375C9322645B87001953B6 /* AppDelegate.swift */; };
 		7B375C9622645B87001953B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375C9522645B87001953B6 /* LoginViewController.swift */; };
 		7B375C9922645B87001953B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B375C9722645B87001953B6 /* Main.storyboard */; };
@@ -22,6 +21,11 @@
 		7B375D132264A410001953B6 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D122264A410001953B6 /* CommonUtil.swift */; };
 		7B375D152264AE6F001953B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D142264AE6F001953B6 /* BaseViewController.swift */; };
 		7B375D172264B44E001953B6 /* AlaramSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B375D162264B44E001953B6 /* AlaramSettingViewController.swift */; };
+		7B8047222269784400CC758B /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B0F2806226833BC00002577 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B8047252269940F00CC758B /* Privacy Statement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B8047242269940F00CC758B /* Privacy Statement.pdf */; };
+		7B8047272269966400CC758B /* Insomnia Introduction.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B8047262269966400CC758B /* Insomnia Introduction.pdf */; };
+		7B8047292269970D00CC758B /* Terms of Use Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B8047282269970D00CC758B /* Terms of Use Agreement.pdf */; };
+		7B80472B2269977D00CC758B /* DISCLAIMER.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80472A2269977D00CC758B /* DISCLAIMER.pdf */; };
 		7BC48C1622659866000D9DA6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C1522659866000D9DA6 /* WebViewController.swift */; };
 		7BC48C182265A980000D9DA6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C172265A980000D9DA6 /* NavigationViewController.swift */; };
 		7BC48C1B2265BB66000D9DA6 /* scheduleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48C1A2265BB66000D9DA6 /* scheduleNotification.swift */; };
@@ -105,7 +109,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7B17D9B0226829610089A86B /* Alamofire.framework in CopyFiles */,
+				7B8047222269784400CC758B /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +142,10 @@
 		7B375D122264A410001953B6 /* CommonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
 		7B375D142264AE6F001953B6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7B375D162264B44E001953B6 /* AlaramSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramSettingViewController.swift; sourceTree = "<group>"; };
+		7B8047242269940F00CC758B /* Privacy Statement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Privacy Statement.pdf"; sourceTree = "<group>"; };
+		7B8047262269966400CC758B /* Insomnia Introduction.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Insomnia Introduction.pdf"; sourceTree = "<group>"; };
+		7B8047282269970D00CC758B /* Terms of Use Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Terms of Use Agreement.pdf"; sourceTree = "<group>"; };
+		7B80472A2269977D00CC758B /* DISCLAIMER.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DISCLAIMER.pdf; sourceTree = "<group>"; };
 		7BC48C1522659866000D9DA6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7BC48C172265A980000D9DA6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		7BC48C192265AFB0000D9DA6 /* GoodSleepHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoodSleepHealth.entitlements; sourceTree = "<group>"; };
@@ -247,6 +255,7 @@
 		7B375C9222645B86001953B6 /* GoodSleepHealth */ = {
 			isa = PBXGroup;
 			children = (
+				7B804723226993ED00CC758B /* Resources */,
 				7BC48C192265AFB0000D9DA6 /* GoodSleepHealth.entitlements */,
 				7B375D0A226495C4001953B6 /* WebServices */,
 				7B375D0722648E25001953B6 /* CommonUtil */,
@@ -315,6 +324,17 @@
 				7B375D0E22649D88001953B6 /* usersWebService.swift */,
 			);
 			path = WebServices;
+			sourceTree = "<group>";
+		};
+		7B804723226993ED00CC758B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B8047242269940F00CC758B /* Privacy Statement.pdf */,
+				7B8047262269966400CC758B /* Insomnia Introduction.pdf */,
+				7B8047282269970D00CC758B /* Terms of Use Agreement.pdf */,
+				7B80472A2269977D00CC758B /* DISCLAIMER.pdf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,9 +509,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8047272269966400CC758B /* Insomnia Introduction.pdf in Resources */,
+				7B8047252269940F00CC758B /* Privacy Statement.pdf in Resources */,
 				7B375CA122645B88001953B6 /* LaunchScreen.storyboard in Resources */,
 				7B375C9E22645B88001953B6 /* Assets.xcassets in Resources */,
 				7B375C9922645B87001953B6 /* Main.storyboard in Resources */,
+				7B80472B2269977D00CC758B /* DISCLAIMER.pdf in Resources */,
+				7B8047292269970D00CC758B /* Terms of Use Agreement.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,17 +822,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 984081E6FA440ED72BE0000C /* Pods-GoodSleepHealth.debug.xcconfig */;
 			buildSettings = {
-				APP_DISPLAY_NAME = GHS_Debug;
+				APP_DISPLAY_NAME = GSH_Debug;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GoodSleepHealth/GoodSleepHealth.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA3Y3P5454;
-				FRAMEWORK_SEARCH_PATHS = (
-					$PODS_CONFIGURATION_BUILD_DIR/Alamofire,
-					"$(inherited)",
-					"$(SRCROOT)/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = GoodSleepHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.softwarepattern.gshDebug;
@@ -829,11 +849,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA3Y3P5454;
-				FRAMEWORK_SEARCH_PATHS = (
-					$PODS_CONFIGURATION_BUILD_DIR/Alamofire,
-					"$(inherited)",
-					"$(SRCROOT)/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = GoodSleepHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.softwarepattern.gsh;

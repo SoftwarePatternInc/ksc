@@ -9,8 +9,6 @@
 import UIKit
 
 class LoginViewController: UIViewController{
-
-    
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var resgisterButton: UIButton!
@@ -21,8 +19,8 @@ class LoginViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-//        userEmailTextField.text = "sajid@spattern.com"
-//        passwordTextField.text = "123456"
+        userEmailTextField.text = "sajid@spattern.com"
+        passwordTextField.text = "123456"
         activityIndicator =  UIActivityIndicatorView(style: .gray)
         activityIndicator.center = view.center
         activityIndicator.isHidden = true
@@ -32,10 +30,37 @@ class LoginViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
        
     }
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        //super.viewDidDisappear(true)
+//        print("disappera login View")
+//        DispatchQueue.main.async {
+//            self.dismiss(animated: true, completion: nil)
+//        }
+        
+        
+    }
+    func documentInteractionControllerViewControllerForPreview(controller: UIDocumentInteractionController!) -> UIViewController! {
+        return self
+    }
     override func viewDidAppear(_ animated: Bool) {
         
     }
     // MARK:  IBOutlet Action Methods
+    @IBAction func termsButtonTap(_ sender: UIButton) {
+        viewPdfFile(fileName: fileNames.termsFile)
+        
+    }
+    @IBAction func privacyButtonTap(_ sender: UIButton) {
+         viewPdfFile(fileName: fileNames.privacyFile)
+    }
+    
+    @IBAction func disclaimerButtontap(_ sender: UIButton) {
+         viewPdfFile(fileName: fileNames.disclaimerFile)
+    }
+    
+    
+    
     func displayActivityIndicatorView() -> () {
         DispatchQueue.main.async {
         UIApplication.shared.beginIgnoringInteractionEvents()

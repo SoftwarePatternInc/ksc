@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 import UserNotifications
 import AudioToolbox
+import EventKit
 class AlaramSettingViewController: UIViewController,UNUserNotificationCenterDelegate {
     
     
     @IBOutlet weak var morningAlarmPicker: UIDatePicker!
     @IBOutlet weak var eveningAlarmPicker: UIDatePicker!
-    
+    //var eventStore = EKEventStore()
     override func viewDidLoad() {
         super.viewDidLoad()
 //        sender.timeZone = Calendar.current.timeZone
@@ -50,6 +51,53 @@ class AlaramSettingViewController: UIViewController,UNUserNotificationCenterDele
             
         }
     }
+    func AddReminder(title:String,notes:String,timeDate:Date) {
+        let eventStore = EKEventStore()
+        eventStore.requestAccess(
+            to: EKEntityType.event, completion: {(granted, error) in
+                if !granted {
+                    print("Access to store not granted")
+                    print(error!.localizedDescription)
+                } else {
+                    print("Access granted")
+                    eventStore.requestAccess(to: EKEntityType.reminder, completion: {
+                        granted, error in
+                        if (granted) && (error == nil) {
+                            print("granted \(granted)")
+                            
+                            
+                            let reminder:EKReminder = EKReminder(eventStore: eventStore)
+                            reminder.title = title
+                            reminder.priority = 1
+                            
+                            //  How to show completed
+                            //reminder.completionDate = Date()
+                            
+                            reminder.notes = notes
+                            
+                            
+                            let alarmTime = timeDate
+                            print("\(title)\(alarmTime)")
+                            let alarm = EKAlarm(absoluteDate: alarmTime)
+                            reminder.addAlarm(alarm)
+                            
+                            reminder.calendar = eventStore.defaultCalendarForNewReminders()
+                            
+                            
+                            do {
+                                try eventStore.save(reminder, commit: true)
+                            } catch {
+                                print("Cannot save")
+                                return
+                            }
+                            print("Reminder saved")
+                        }
+                    })
+                }
+        })
+
+        
+    }
     @IBAction func morningPickerTap(_ sender: UIDatePicker) {
         //print(sender.date)
         getTime(sender: sender,morning: true)
@@ -62,22 +110,25 @@ class AlaramSettingViewController: UIViewController,UNUserNotificationCenterDele
     }
     
     @IBAction func saveButtonTap(_ sender: UIButton) {
-         let notify = scheduleNotification()
+         //let notify = scheduleNotification()
         guard let morningTimeInterval = CommonUtil.morningAlarm else {
             return
         }
         guard let eveningTimeInterval = CommonUtil.eveningAlaram else {
             return
         }
-        notify.scheduleNotification(notificationType: "Morning Alaram", timeInterval: morningTimeInterval)
-        notify.scheduleNotification(notificationType: "Evening Alaram", timeInterval: eveningTimeInterval)
+        AddReminder(title: "Morning", notes: "Open Good Sleep Health and Fill Morning Questionair", timeDate: morningTimeInterval)
+        AddReminder(title: "Evening", notes: "Open Good Sleep Health and Fill Evening Questionair", timeDate: eveningTimeInterval)
+        
+//        notify.scheduleNotification(notificationType: "Morning Alaram", timeInterval: morningTimeInterval)
+//        notify.scheduleNotification(notificationType: "Evening Alaram", timeInterval: eveningTimeInterval)
         
     }
     
     func getTime(sender:UIDatePicker,morning:Bool)
     {
         let outputTimeInterval = sender.date
-        print("Phone Date :\(Date()) .. Picker Date \(outputTimeInterval)")
+        //print("Phone Date :\(Date()) .. Picker Date \(outputTimeInterval)")
         
         if morning{
             CommonUtil.morningAlarm = outputTimeInterval
@@ -85,7 +136,7 @@ class AlaramSettingViewController: UIViewController,UNUserNotificationCenterDele
         else{
             CommonUtil.eveningAlaram = outputTimeInterval
         }
-        print("ouptputTime: \(outputTimeInterval)")
+        //print("ouptputTime: \(outputTimeInterval)")
     }
     func parseDuration(_ timeString:String) -> TimeInterval {
         guard !timeString.isEmpty else {
